@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Dot : MonoBehaviour
 {
+    [SerializeField] int column;
+    [SerializeField] int row;
+    private GameObject otherDot;
     private Vector2 firstTouchPosition;
     private Vector2 finalTouchPosition;
     [SerializeField] float swipeAngle = 0;
@@ -32,6 +35,14 @@ public class Dot : MonoBehaviour
     void CalcuteAngle()
     {
         swipeAngle = Mathf.Atan2(finalTouchPosition.y - firstTouchPosition.y, finalTouchPosition.x - firstTouchPosition.x)*180/Mathf.PI;
-        
+        MovePieces();
+    }
+    void MovePieces()
+    {
+        if(swipeAngle > -45 && swipeAngle <= 45)
+        {
+            //Right swipe
+
+        }
     }
 }

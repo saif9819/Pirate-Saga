@@ -8,13 +8,12 @@ public class Boards : MonoBehaviour
     [SerializeField] int width;
     [SerializeField] GameObject tilesPrefab;
     [SerializeField] GameObject[] dots;
-    private BackgroundTile[,] allTiles;
+    
     [SerializeField] GameObject[,] allDots;
 
     // Start is called before the first frame update
     void Start()
     {
-        allTiles = new BackgroundTile[width, height];
         allDots = new GameObject[width, height];
         Setup();
     }
