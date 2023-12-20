@@ -108,4 +108,5 @@ public class Dot : MonoBehaviour
             board.allDots[column, row] = this.gameObject;
         }
     }
+    //test
 }
