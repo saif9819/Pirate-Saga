@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Boards : MonoBehaviour
 {
-    [SerializeField] int height;
-    [SerializeField] int width;
-    [SerializeField] GameObject tilesPrefab;
-    [SerializeField] GameObject[] dots;
+    public int height;
+    public int width;
+    public GameObject tilesPrefab;
+    public GameObject[] dots;
     
-    [SerializeField] GameObject[,] allDots;
+    public GameObject[,] allDots;
 
     // Start is called before the first frame update
     void Start()
