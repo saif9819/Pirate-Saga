@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Dot : MonoBehaviour
 {
-    [SerializeField] int column;
-    [SerializeField] int row;
-    [SerializeField] int targetX;
-    [SerializeField] int targetY;
+    private int column;
+    private int row;
+    private int targetX;
+    private int targetY;
+    private bool isMatched = false;
     private GameObject otherDot;
     private Boards board;
     private Vector2 firstTouchPosition;
@@ -27,6 +28,12 @@ public class Dot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FindMatches();
+        if (isMatched)
+        {
+            SpriteRenderer mysprite = GetComponent<SpriteRenderer>();
+            mysprite.color = Color.white;
+        }
         targetX = column;
         targetY = row;
         Move();
@@ -108,5 +115,30 @@ public class Dot : MonoBehaviour
             board.allDots[column, row] = this.gameObject;
         }
     }
-    //test
+
+    void FindMatches()
+    {
+        if (column > 0 && column < board.width - 1)
+        {
+            GameObject leftDot1 = board.allDots[column - 1, row];
+            GameObject rightDot1 = board.allDots[column + 1, row];
+            if(leftDot1.tag==this.gameObject.tag && rightDot1.tag == this.gameObject.tag)
+            {
+                leftDot1.GetComponent<Dot>().isMatched = true;
+                rightDot1.GetComponent<Dot>().isMatched = true;
+                isMatched = true;
+            }
+        }
+        if (row > 0 && row < board.height - 1)
+        {
+            GameObject upDot1 = board.allDots[column, row + 1];
+            GameObject downDot1 = board.allDots[column, row - 1];
+            if (upDot1.tag == this.gameObject.tag && downDot1.tag == this.gameObject.tag)
+            {
+                upDot1.GetComponent<Dot>().isMatched = true;
+                downDot1.GetComponent<Dot>().isMatched = true;
+                isMatched = true;
+            }
+        }
+    }
 }
