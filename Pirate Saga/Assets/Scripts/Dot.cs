@@ -5,7 +5,7 @@ using UnityEngine;
 public class Dot : MonoBehaviour
 {
     private int column;
-    private int row;
+    public int row;
     private int previousColumn;
     private int previousRow;
     private int targetX;
