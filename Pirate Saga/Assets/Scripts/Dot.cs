@@ -47,7 +47,7 @@ public class Dot : MonoBehaviour
 
     public IEnumerator CheckMoveCo()
     {
-        yield return new WaitForSeconds(.7f);
+        yield return new WaitForSeconds(.9f);
         if(otherDot != null)
         {
             if(!isMatched && !otherDot.GetComponent<Dot>().isMatched)
