@@ -473,6 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 8
   width: 4
+  offset: 25
   tilesPrefab: {fileID: 9132002765453551875, guid: 4b34a36d40e7afa4f8d39442c68920fd,
     type: 3}
   dots:
