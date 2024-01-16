@@ -133,7 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf51bba7941ac740a2fd20835cca5ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  column: 0
   row: 0
-  targetX: 0
-  targetY: 0
+  isMatched: 0

@@ -122,27 +122,35 @@ public class Dot : MonoBehaviour
         {
             //Move Towards Tagert
             temPosition = new Vector2(targetX, transform.position.y);
-            transform.position = Vector2.Lerp(transform.position, temPosition, .4f);
+            transform.position = Vector2.Lerp(transform.position, temPosition, .6f);
+            if (board.allDots[column,row]!= this.gameObject)
+            {
+                board.allDots[column,row] = this.gameObject;
+            }
         }
         else
         {
             //Directly set the position
             temPosition = new Vector2(targetX, transform.position.y);
             transform.position = temPosition;
-            board.allDots[column, row] = this.gameObject;
+            
         }
         if (Mathf.Abs(targetY - transform.position.y) > .1)
         {
             //Move Towards Tagert
             temPosition = new Vector2(transform.position.x, targetY);
-            transform.position = Vector2.Lerp(transform.position, temPosition, .4f);
+            transform.position = Vector2.Lerp(transform.position, temPosition, .6f);
+            if (board.allDots[column, row] != this.gameObject)
+            {
+                board.allDots[column, row] = this.gameObject;
+            }
         }
         else
         {
             //Directly set the position
             temPosition = new Vector2(transform.position.x, targetY);
             transform.position = temPosition;
-            board.allDots[column, row] = this.gameObject;
+            
         }
     }
 
