@@ -37,7 +37,7 @@ public class Boards : MonoBehaviour
                 }
                 maxIterations = 0;
                 GameObject dot = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity);
-                dot.GetComponent<Dot>().row = j;
+               dot.GetComponent<Dot>().row = j;
                 dot.GetComponent<Dot>().column = i;
                 dot.transform.parent = this.transform;
                 dot.name = "(" + i + "," + j + ")";
@@ -133,12 +133,12 @@ public class Boards : MonoBehaviour
             {
                 if (allDots[i, j] == null)
                 {
-                    Vector2 temPosition = new Vector2(i, j + offset);
+                    Vector2 temPosition = new Vector2(i, j+ offset);
                     int dotToUse = Random.Range(0, dots.Length);
                     GameObject piece = Instantiate(dots[dotToUse], temPosition, Quaternion.identity);
                     allDots[i, j] = piece;
-                    piece.GetComponent<Dot>().row = j;
-                    piece.GetComponent<Dot>().column = i;
+                   piece.GetComponent<Dot>().row = j;
+                   piece.GetComponent<Dot>().column = i;
                 }
             }
         }
