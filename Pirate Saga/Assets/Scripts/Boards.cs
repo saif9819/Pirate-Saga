@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum GameState
+{
+    wait,
+    move
+}
+
 public class Boards : MonoBehaviour
 {
+   public GameState CureentState = GameState.move;
     public int height;
     public int width;
     [SerializeField] int offset;
     public GameObject tilesPrefab;
     public GameObject[] dots;
-    
     public GameObject[,] allDots;
 
     // Start is called before the first frame update
@@ -170,6 +176,9 @@ public class Boards : MonoBehaviour
             yield return new WaitForSeconds(.5f);
             DestroyMatches();
         }
+
+        yield return new WaitForSeconds(.5f);
+        CureentState = GameState.move;
 
     }
 }
