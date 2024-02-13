@@ -38,7 +38,7 @@ public class Dot : MonoBehaviour
         if (isMatched)
         {
             SpriteRenderer mysprite = GetComponent<SpriteRenderer>();
-            mysprite.color = Color.white;
+            mysprite.color= new Color(mysprite.color.r, mysprite.color.g, mysprite.color.b, .3f);
         }
         targetX = column;
         targetY = row;
@@ -66,7 +66,13 @@ public class Dot : MonoBehaviour
             }
             otherDot = null;
         }
-        
+       /* else
+        {
+            board.currentState = GameState.move;   // i added this line because otherDot is NULL 
+
+        }*/
+
+
     }
     private void OnMouseDown()
     {
