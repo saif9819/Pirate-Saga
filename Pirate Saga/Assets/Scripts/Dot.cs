@@ -67,11 +67,11 @@ public class Dot : MonoBehaviour
             }
             otherDot = null;
         }
-       /* else
+       
         {
-            board.currentState = GameState.move;   // i added this line because otherDot is NULL 
+            board.CureentState = GameState.move;  
 
-        }*/
+        }
 
 
     }
