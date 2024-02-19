@@ -10,8 +10,7 @@ public enum GameState
 
 public class Boards : MonoBehaviour
 {
-    private FindMatches findMatches;
-    public GameState CureentState = GameState.move;
+   public GameState CureentState = GameState.move;
     public int height;
     public int width;
     [SerializeField] int offset;
@@ -22,7 +21,6 @@ public class Boards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        findMatches = FindAnyObjectByType<FindMatches>();
         allDots = new GameObject[width, height];
         Setup();
     }
@@ -91,7 +89,6 @@ public class Boards : MonoBehaviour
     {
         if (allDots[column, row].GetComponent<Dot>().isMatched)
         {
-            findMatches.currentMatches.Remove(allDots[column, row]);
             Destroy(allDots[column, row]);
             allDots[column, row] = null;
         }
