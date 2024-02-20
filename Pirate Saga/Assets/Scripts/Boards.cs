@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState
+public 
+    enum GameState
 {
     wait,
     move
@@ -10,8 +11,8 @@ public enum GameState
 
 public class Boards : MonoBehaviour
 {
-    //private FindMatches findMatches;
-    public GameState CureentState = GameState.move;
+    private FindMatches findMatches;
+    public GameState cureentState = GameState.move;
     public int height;
     public int width;
     [SerializeField] int offset;
@@ -22,7 +23,7 @@ public class Boards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // findMatches = FindAnyObjectByType<FindMatches>();
+       findMatches = FindAnyObjectByType<FindMatches>();
         allDots = new GameObject[width, height];
         Setup();
     }
@@ -91,7 +92,7 @@ public class Boards : MonoBehaviour
     {
         if (allDots[column, row].GetComponent<Dot>().isMatched)
         {
-            //findMatches.currentMatches.Remove(allDots[column, row]);
+            findMatches.currentMatches.Remove(allDots[column, row]);
             Destroy(allDots[column, row]);
             allDots[column, row] = null;
         }
@@ -182,7 +183,7 @@ public class Boards : MonoBehaviour
         }
 
         yield return new WaitForSeconds(.5f);
-        CureentState = GameState.move;
+        cureentState = GameState.move;
 
     }
 }
