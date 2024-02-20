@@ -12,6 +12,7 @@ TagManager:
   - Dot6
   - Dot7
   - Dot8
+  - Dot9
   layers:
   - Default
   - TransparentFX
@@ -48,4 +49,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: grid
+    uniqueID: 1692820707
+    locked: 0
+  - name: gems
+    uniqueID: 3166124993
     locked: 0

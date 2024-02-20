@@ -474,18 +474,19 @@ MonoBehaviour:
   CureentState: 1
   height: 8
   width: 4
-  offset: 20
+  offset: 0
   tilesPrefab: {fileID: 9132002765453551875, guid: 4b34a36d40e7afa4f8d39442c68920fd,
     type: 3}
   dots:
-  - {fileID: 7787520339322592736, guid: 58ddd79273db9474689300d26c697519, type: 3}
-  - {fileID: 820076971702531881, guid: d90a228b763a484489d4cde10ee621c9, type: 3}
-  - {fileID: 2244210893167408093, guid: e8d74dee548ce8a4490f0796f48b9611, type: 3}
-  - {fileID: 1035611181126311995, guid: d0bc0f102a12a5c448ac7ad35fcc99f5, type: 3}
-  - {fileID: 2203641039428858470, guid: f5f111881fdbb3f4884d713a4d04e057, type: 3}
-  - {fileID: 2016660322583987068, guid: 053137feb95798b4081b18e39a2ceb01, type: 3}
-  - {fileID: 2026038343134602871, guid: 38f60afc535772f4fbbcd929afc56c06, type: 3}
-  - {fileID: 34148154329318536, guid: 4b2544309f287f04ea38ffd5069d4381, type: 3}
+  - {fileID: 3204870960853489609, guid: 4aca74056133f6445bc85830f091e4ae, type: 3}
+  - {fileID: 5862278133470654469, guid: 6b86e06a44a0a5c4eb252a1e3bbcac43, type: 3}
+  - {fileID: 5232274430667789707, guid: a484ffb0eaa142342b9ef1f6a6efecec, type: 3}
+  - {fileID: 894576360219017004, guid: a254f47ecf1250843a57e5eb733097a4, type: 3}
+  - {fileID: 6606840270123691997, guid: 65588e0af7c013a45ab2c3f9e8ebf381, type: 3}
+  - {fileID: 8276886191745601096, guid: 331bde3a436fca746b4ad17467e89847, type: 3}
+  - {fileID: 58321768403914079, guid: 7f1419f347b97944db6e5dc0e093bce5, type: 3}
+  - {fileID: 1452301155683483858, guid: 2581e6aaca71bd447896a791db20fef7, type: 3}
+  - {fileID: 218253850281202340, guid: 22547e51279606549934c29ec34ef4df, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

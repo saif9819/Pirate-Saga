@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4655225709353584705}
   - component: {fileID: 8400466315683653135}
   - component: {fileID: -2088149442011892633}
-  - component: {fileID: -1978556030517230345}
   m_Layer: 0
   m_Name: Light Blue
   m_TagString: Dot3
@@ -121,19 +120,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.35555556
---- !u!114 &-1978556030517230345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2244210893167408093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cf51bba7941ac740a2fd20835cca5ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  column: 0
-  row: 0
-  targetX: 0
-  targetY: 0
