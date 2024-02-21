@@ -482,6 +482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1133838879}
   - component: {fileID: 1133838880}
+  - component: {fileID: 1133838881}
   m_Layer: 0
   m_Name: Boards
   m_TagString: Untagged
@@ -519,9 +520,7 @@ MonoBehaviour:
   cureentState: 1
   height: 8
   width: 6
-  offset: 0
-  destroyEffect: {fileID: 3003887161494845855, guid: 1219174ece3150249b329710a7cb5228,
-    type: 3}
+  offset: 25
   tilesPrefab: {fileID: 9132002765453551875, guid: 4b34a36d40e7afa4f8d39442c68920fd,
     type: 3}
   dots:
@@ -534,6 +533,20 @@ MonoBehaviour:
   - {fileID: 58321768403914079, guid: 7f1419f347b97944db6e5dc0e093bce5, type: 3}
   - {fileID: 1452301155683483858, guid: 2581e6aaca71bd447896a791db20fef7, type: 3}
   - {fileID: 218253850281202340, guid: 22547e51279606549934c29ec34ef4df, type: 3}
+--- !u!114 &1133838881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133838877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1410ff7be3351439ac57e63dffa0c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyEffect: {fileID: 3003887161494845855, guid: 1219174ece3150249b329710a7cb5228,
+    type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

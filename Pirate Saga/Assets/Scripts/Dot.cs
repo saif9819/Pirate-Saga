@@ -17,12 +17,24 @@ public class Dot : MonoBehaviour
     private Vector2 firstTouchPosition;
     private Vector2 finalTouchPosition;
     private Vector2 temPosition;
+
+    [Header("Swipe Stuff")]
     private float swipeAngle = 0;
     private float swipeResist = 1f;
+
+    [Header("Powerup")]
+    public bool isColumnBomb;
+    public bool isRowBomb;
+    [SerializeField] GameObject rowArrow;
+    [SerializeField] GameObject columnArrow;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        board=FindAnyObjectByType<Boards>();
+        isColumnBomb = false;
+        isRowBomb = false;
+        board =FindAnyObjectByType<Boards>();
         findMatches=FindAnyObjectByType<FindMatches>();
        // targetX=(int)transform.position.x;
        // targetY=(int)transform.position.y;
@@ -32,10 +44,20 @@ public class Dot : MonoBehaviour
       //  previousColumn=column;
     }
 
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            isRowBomb = true;
+            GameObject arrow = Instantiate(rowArrow, transform.position, Quaternion.identity);
+            arrow.transform.parent = this.transform;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        //FindMatches();
+        
         if (isMatched)
         {
             SpriteRenderer mysprite = GetComponent<SpriteRenderer>();

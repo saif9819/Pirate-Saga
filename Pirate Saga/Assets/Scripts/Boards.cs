@@ -11,12 +11,13 @@ public
 
 public class Boards : MonoBehaviour
 {
+    private DestroyParticles particles;
     private FindMatches findMatches;
     public GameState cureentState = GameState.move;
     public int height;
     public int width;
     [SerializeField] int offset;
-    [SerializeField] private GameObject destroyEffect;
+    //[SerializeField] private GameObject destroyEffect;
     public GameObject tilesPrefab;
     public GameObject[] dots;
     public GameObject[,] allDots;
@@ -24,6 +25,7 @@ public class Boards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        particles=FindAnyObjectByType<DestroyParticles>();
        findMatches = FindAnyObjectByType<FindMatches>();
         allDots = new GameObject[width, height];
         Setup();
@@ -94,8 +96,9 @@ public class Boards : MonoBehaviour
         if (allDots[column, row].GetComponent<Dot>().isMatched)
         {
             findMatches.currentMatches.Remove(allDots[column, row]);
-            GameObject particle=Instantiate(destroyEffect, allDots[column, row].transform.position, Quaternion.identity);
-            Destroy(particle, .5f);
+            particles.Particles(column,row);
+            //GameObject particle = Instantiate(destroyEffect, allDots[column, row].transform.position, Quaternion.identity);
+            //Destroy(particle, .5f);
             Destroy(allDots[column, row]);
             allDots[column, row] = null;
         }

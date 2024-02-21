@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class FindMatches : MonoBehaviour
 {
+   // private PowerUp powerUp;
     private Boards boards;
     public List<GameObject> currentMatches = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
         boards=FindAnyObjectByType<Boards>();
+        //powerUp = FindAnyObjectByType<PowerUp>();
     }
 
     public void FindAllMatches()
@@ -35,6 +38,13 @@ public class FindMatches : MonoBehaviour
                         {
                             if (leftDot.tag == currentDot.tag && rightDot.tag == currentDot.tag)
                             {
+                                if(currentDot.GetComponent<Dot>().isRowBomb
+                                    || leftDot.GetComponent<Dot>().isRowBomb
+                                    || rightDot.GetComponent<Dot>().isRowBomb)
+                                {
+                                    
+                                    currentMatches.Union(GetRowPieces(j));
+                                }
                                 if (!currentMatches.Contains(leftDot))
                                 {
                                     currentMatches.Add(leftDot);
@@ -85,4 +95,34 @@ public class FindMatches : MonoBehaviour
             }
         }
     }
+
+    List<GameObject> GetColumnPieces(int column)
+    {
+        List<GameObject> gems = new List<GameObject>();
+        for (int i = 0; i < boards.height; i++)
+        {
+            if (boards.allDots[column, i] != null)
+            {
+                gems.Add(boards.allDots[column, i]);
+                boards.allDots[column, i].GetComponent<Dot>().isMatched = true;
+            }
+        }
+        return gems;
+    }
+
+
+     List<GameObject> GetRowPieces(int row)
+    {
+        List<GameObject> gems = new List<GameObject>();
+        for (int i = 0; i < boards.width; i++)
+        {
+            if (boards.allDots[i, row] != null)
+            {
+                gems.Add(boards.allDots[i, row]);
+                boards.allDots[i, row].GetComponent<Dot>().isMatched = true;
+            }
+        }
+        return gems;
+    }
+
 }
