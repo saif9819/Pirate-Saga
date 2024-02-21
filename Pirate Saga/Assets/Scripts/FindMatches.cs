@@ -162,4 +162,51 @@ public class FindMatches : MonoBehaviour
         return gems;
     }
 
+    public void CheckBombs()
+    {
+        //Did the player move something?
+        if(boards.currentDot != null)
+        {
+            //Is the piece they moved matched?
+            if (boards.currentDot.isMatched)
+            {
+                //make it unmatched
+                boards.currentDot.isMatched = false;
+                //Decide what kind of bomb to make
+                int typeOfBomb = Random.Range(0, 100);
+                if (typeOfBomb < 50)
+                {
+                    //make row bomb
+                    boards.currentDot.MakeRowBomb();
+                } 
+                else if (typeOfBomb <= 50)
+                {
+                    //make column bomb
+                    boards.currentDot.MakeColumnBomb();
+                }
+            }
+            //Is the other piece matched?
+            else if (boards.currentDot.otherDot != null) 
+            {
+                Dot otherDot = boards.currentDot.otherDot.GetComponent<Dot>();
+                if (otherDot.isMatched)
+                {
+                    //Make it unmatched
+                    otherDot.isMatched = false;
+                    int typeOfBomb = Random.Range(0, 100);
+                    if (typeOfBomb < 50)
+                    {
+                        //make row bomb
+                        otherDot.MakeRowBomb();
+                    }
+                    else if (typeOfBomb <= 50)
+                    {
+                        //make column bomb
+                        otherDot.MakeColumnBomb();
+                    }
+                }
+            }
+        }
+    }
+
 }

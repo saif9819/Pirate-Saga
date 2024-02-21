@@ -517,10 +517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7fbe6cbe6b49946a157435636ffb6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cureentState: 1
   height: 8
   width: 6
-  offset: 25
+  offset: 0
   tilesPrefab: {fileID: 9132002765453551875, guid: 4b34a36d40e7afa4f8d39442c68920fd,
     type: 3}
   dots:
@@ -533,6 +532,8 @@ MonoBehaviour:
   - {fileID: 58321768403914079, guid: 7f1419f347b97944db6e5dc0e093bce5, type: 3}
   - {fileID: 1452301155683483858, guid: 2581e6aaca71bd447896a791db20fef7, type: 3}
   - {fileID: 218253850281202340, guid: 22547e51279606549934c29ec34ef4df, type: 3}
+  currentDot: {fileID: 0}
+  cureentState: 1
 --- !u!114 &1133838881
 MonoBehaviour:
   m_ObjectHideFlags: 0
