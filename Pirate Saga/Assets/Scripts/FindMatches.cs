@@ -173,6 +173,7 @@ public class FindMatches : MonoBehaviour
                 //make it unmatched
                 boards.currentDot.isMatched = false;
                 //Decide what kind of bomb to make
+              /*
                 int typeOfBomb = Random.Range(0, 100);
                 if (typeOfBomb < 50)
                 {
@@ -183,7 +184,17 @@ public class FindMatches : MonoBehaviour
                 {
                     //make column bomb
                     boards.currentDot.MakeColumnBomb();
+                }*/
+              if((boards.currentDot.swipeAngle>-45 && boards.currentDot.swipeAngle <= 45)
+                    ||(boards.currentDot.swipeAngle > -135||boards.currentDot.swipeAngle >= 135))
+                {
+                    boards.currentDot.MakeRowBomb();
                 }
+                else
+                {
+                    boards.currentDot.MakeColumnBomb();
+                }
+             
             }
             //Is the other piece matched?
             else if (boards.currentDot.otherDot != null) 
@@ -193,17 +204,30 @@ public class FindMatches : MonoBehaviour
                 {
                     //Make it unmatched
                     otherDot.isMatched = false;
-                    int typeOfBomb = Random.Range(0, 100);
-                    if (typeOfBomb < 50)
+                    /*
+                      int typeOfBomb = Random.Range(0, 100);
+                      if (typeOfBomb < 50)
+                      {
+                          //make row bomb
+                          otherDot.MakeRowBomb();
+                      }
+                      else if (typeOfBomb <= 50)
+                      {
+                          //make column bomb
+                          otherDot.MakeColumnBomb();
+                      }
+                    */
+
+                    if ((boards.currentDot.swipeAngle > -45 && boards.currentDot.swipeAngle <= 45)
+                    || (boards.currentDot.swipeAngle > -135 || boards.currentDot.swipeAngle >= 135))
                     {
-                        //make row bomb
                         otherDot.MakeRowBomb();
                     }
-                    else if (typeOfBomb <= 50)
+                    else
                     {
-                        //make column bomb
                         otherDot.MakeColumnBomb();
                     }
+
                 }
             }
         }

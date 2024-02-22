@@ -19,8 +19,8 @@ public class Dot : MonoBehaviour
     private Vector2 temPosition;
 
     [Header("Swipe Stuff")]
-    private float swipeAngle = 0;
-    private float swipeResist = 1f;
+    public float swipeAngle = 0;
+    public float swipeResist = 1f;
 
     [Header("Powerup")]
     public bool isColumnBomb;
