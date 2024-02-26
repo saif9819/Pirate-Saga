@@ -23,10 +23,12 @@ public class Dot : MonoBehaviour
     public float swipeResist = 1f;
 
     [Header("Powerup")]
+    public bool isColorBomb;
     public bool isColumnBomb;
     public bool isRowBomb;
     [SerializeField] GameObject rowArrow;
     [SerializeField] GameObject columnArrow;
+    [SerializeField] GameObject colorBomb;
 
 
     // Start is called before the first frame update
@@ -44,15 +46,15 @@ public class Dot : MonoBehaviour
       //  previousColumn=column;
     }
 
-   /* private void OnMouseOver()
+   private void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(1))
         {
-            isRowBomb = true;
-            GameObject arrow = Instantiate(rowArrow, transform.position, Quaternion.identity);
-            arrow.transform.parent = this.transform;
+            isColorBomb = true;
+            GameObject color = Instantiate(colorBomb, transform.position, Quaternion.identity);
+            color.transform.parent = this.transform;
         }
-    }*/
+    }
 
     // Update is called once per frame
     void Update()
@@ -71,6 +73,17 @@ public class Dot : MonoBehaviour
 
     public IEnumerator CheckMoveCo()
     {
+        if(isColorBomb)
+        {
+            //this piece is a color bomb, and the other piece is the color to destroy
+            findMatches.MatchPiecesOfColor(otherDot.tag);
+            isMatched = true;
+        }
+        else if (otherDot.GetComponent<Dot>().isColorBomb)
+        {//The other piece is a color bomb,and this peice has the color to destroy
+            findMatches.MatchPiecesOfColor(this.gameObject.tag);
+            otherDot.GetComponent<Dot>().isMatched = true;
+        }
         yield return new WaitForSeconds(.9f);
         if(otherDot != null)
         {
@@ -210,6 +223,7 @@ public class Dot : MonoBehaviour
         }
     }
 
+    /*
     void FindMatches()
     {
         if (column > 0 && column < board.width - 1)
@@ -244,7 +258,7 @@ public class Dot : MonoBehaviour
             }
         }
     }
-
+    */
     public void MakeRowBomb()
     {
         isRowBomb = true;

@@ -133,6 +133,26 @@ public class FindMatches : MonoBehaviour
         }
     }
 
+    public void MatchPiecesOfColor(string color)
+    {
+        for(int i = 0;i<boards.width;i++)
+        {
+            for (int j = 0; j < boards.height; j++)
+            {
+                //check if that piece that exists
+                if (boards.allDots[i, j] != null)
+                {
+                    if (boards.allDots[i, j].tag == color)
+                    {
+                        //set that dot to be matched
+                        boards.allDots[i,j].GetComponent<Dot>().isMatched = true;
+                    }
+                }
+            }
+        }
+    }
+
+
     List<GameObject> GetColumnPieces(int column)
     {
         List<GameObject> gems = new List<GameObject>();
