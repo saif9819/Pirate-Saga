@@ -78,7 +78,7 @@ public class FindMatches : MonoBehaviour
         {
             for (int j = 0;j<boards.height;j++) 
             {
-                GameObject currentDot = boards.allDots[i, j]; 
+                GameObject currentDot = boards.allDots[i, j];
                 
                 if (currentDot != null)
                 {
@@ -87,22 +87,26 @@ public class FindMatches : MonoBehaviour
                     {
                         GameObject leftDot = boards.allDots[i - 1, j];
                         
-                        
+
                         GameObject rightDot = boards.allDots[i + 1, j];
-                        
                         if (leftDot != null && rightDot != null)
                         {
-                            Dot leftDotDot = leftDot.GetComponent<Dot>();
                             Dot rightDotDot = rightDot.GetComponent<Dot>();
-                            if (leftDot.tag == currentDot.tag && rightDot.tag == currentDot.tag)
+                            Dot leftDotDot = leftDot.GetComponent<Dot>();
+                            if (leftDot != null && rightDot != null)
                             {
-                                currentMatches.Union(isRowBomb(leftDotDot, currentDotDot, rightDotDot));
 
-                                currentMatches.Union(isColumnBomb(leftDotDot, currentDotDot, rightDotDot));
 
-                                GetNearbyPieces(leftDot, currentDot, rightDot);
+                                if (leftDot.tag == currentDot.tag && rightDot.tag == currentDot.tag)
+                                {
+                                    currentMatches.Union(isRowBomb(leftDotDot, currentDotDot, rightDotDot));
 
-                                
+                                    currentMatches.Union(isColumnBomb(leftDotDot, currentDotDot, rightDotDot));
+
+                                    GetNearbyPieces(leftDot, currentDot, rightDot);
+
+
+                                }
                             }
                         }
                     }
@@ -112,20 +116,24 @@ public class FindMatches : MonoBehaviour
                         GameObject upDot = boards.allDots[i, j - 1];
                         
                         GameObject downDot = boards.allDots[i, j + 1];
-                        
                         if (upDot != null && downDot != null)
                         {
-                            Dot upDotDot = upDot.GetComponent<Dot>();
                             Dot downDotDot = downDot.GetComponent<Dot>();
-                            if (upDot.tag == currentDot.tag && downDot.tag == currentDot.tag)
+                            Dot upDotDot = upDot.GetComponent<Dot>();
+                            if (upDot != null && downDot != null)
                             {
 
-                                currentMatches.Union(isColumnBomb(upDotDot, currentDotDot, downDotDot));
-                                currentMatches.Union(isRowBomb(upDotDot,currentDotDot,downDotDot));
 
-                                GetNearbyPieces(upDot, currentDot,downDot);
+                                if (upDot.tag == currentDot.tag && downDot.tag == currentDot.tag)
+                                {
+
+                                    currentMatches.Union(isColumnBomb(upDotDot, currentDotDot, downDotDot));
+                                    currentMatches.Union(isRowBomb(upDotDot, currentDotDot, downDotDot));
+
+                                    GetNearbyPieces(upDot, currentDot, downDot);
 
 
+                                }
                             }
                         }
                     }
