@@ -6,10 +6,10 @@ public class CameraScalar : MonoBehaviour
 {
 
     private Boards board;
-    public float cameraOffset;
-    public float aspectRatio = 0.625f;
-    public float padding = 2;
-    public float yOffset = 1;
+    [SerializeField] float cameraOffset;
+    [SerializeField] float aspectRatio = 0.625f;
+    [SerializeField] float padding = 2;
+    [SerializeField] float yOffset = 1;
 
     // Use this for initialization
     void Start()

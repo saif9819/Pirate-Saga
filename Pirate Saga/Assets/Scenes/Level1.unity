@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -260,6 +261,22 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993a96d6e6caa4446a9f9b1e7dd04942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraOffset: -10
+  aspectRatio: 0.625
+  padding: 2
+  yOffset: 1
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +642,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1133838879}
   - component: {fileID: 1133838880}
-  - component: {fileID: 1133838881}
   m_Layer: 0
   m_Name: Boards
   m_TagString: Untagged
@@ -660,10 +676,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7fbe6cbe6b49946a157435636ffb6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 8
-  width: 6
-  offset: 0
-  tilesPrefab: {fileID: 9132002765453551875, guid: 4b34a36d40e7afa4f8d39442c68920fd,
+  currentState: 1
+  width: 5
+  height: 5
+  offSet: 10
+  tilePrefab: {fileID: 9132002765453551875, guid: 4b34a36d40e7afa4f8d39442c68920fd,
+    type: 3}
+  breakableTilePrefab: {fileID: 1825092229918079561, guid: 7054ecebb4de6ba43992dcc68e32481a,
     type: 3}
   dots:
   - {fileID: 2823567514315397974, guid: dfa465b29d79d684d90d8dd99f2c1113, type: 3}
@@ -675,22 +694,13 @@ MonoBehaviour:
   - {fileID: 4222844061913629404, guid: 8fcf62b99c323804282232deb6640d82, type: 3}
   - {fileID: 4942859436844455378, guid: e8a9450f823390d45b779dc9e1902265, type: 3}
   - {fileID: 7980203745756247377, guid: 22547e51279606549934c29ec34ef4df, type: 3}
-  currentDot: {fileID: 0}
-  cureentState: 1
---- !u!114 &1133838881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133838877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c1410ff7be3351439ac57e63dffa0c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyEffect: {fileID: 3003887161494845855, guid: 1219174ece3150249b329710a7cb5228,
+  destroyParticle: {fileID: 3003887161494845855, guid: 1219174ece3150249b329710a7cb5228,
     type: 3}
+  boardLayout: []
+  currentDot: {fileID: 0}
+  basePieceValue: 20
+  refillDelay: 0.5
+  scoreGoals: 
 --- !u!1 &1558850444
 GameObject:
   m_ObjectHideFlags: 0
