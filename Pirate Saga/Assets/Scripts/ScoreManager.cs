@@ -9,13 +9,13 @@ public class ScoreManager : MonoBehaviour
     private Boards board;
     public Text scoreText;
     public int score;
-    public Image scoreBar;
+    //public Image scoreBar;
 
     // Use this for initialization
     void Start()
     {
         board = FindObjectOfType<Boards>();
-        UpdateBar();
+        //UpdateBar();
     }
 
     // Update is called once per frame
@@ -27,10 +27,10 @@ public class ScoreManager : MonoBehaviour
     public void IncreaseScore(int amountToIncrease)
     {
         score += amountToIncrease;
-        UpdateBar();
+       // UpdateBar();
     }
 
-    private void UpdateBar()
+    /*private void UpdateBar()
     {
         if (board != null && scoreBar != null)
         {
@@ -41,5 +41,5 @@ public class ScoreManager : MonoBehaviour
 
 
         }
-    }
+    }*/
 }

@@ -59,6 +59,7 @@ public class Boards : MonoBehaviour
         blankSpaces = new bool[width, height];
         allDots = new GameObject[width, height];
         SetUp();
+       
     }
 
 
@@ -305,7 +306,7 @@ public class Boards : MonoBehaviour
                                               Quaternion.identity);
             Destroy(particle, .5f);
             Destroy(allDots[column, row]);
-            //scoreManager.IncreaseScore(basePieceValue * streakValue);
+            scoreManager.IncreaseScore(basePieceValue * streakValue);
             allDots[column, row] = null;
         }
     }
