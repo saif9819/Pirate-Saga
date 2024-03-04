@@ -45,7 +45,7 @@ public class Boards : MonoBehaviour
     private int streakValue = 1;
     private ScoreManager scoreManager;
     private SoundManager soundManager;
-    public float refillDelay = 0.5f;
+    [SerializeField] float refillDelay = 0.5f;
     public int[] scoreGoals;
 
 

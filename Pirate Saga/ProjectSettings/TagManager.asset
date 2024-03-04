@@ -13,6 +13,7 @@ TagManager:
   - Dot7
   - Dot8
   - Dot9
+  - Color
   layers:
   - Default
   - TransparentFX
