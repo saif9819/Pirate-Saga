@@ -1122,8 +1122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 1
-  width: 5
-  height: 5
+  width: 7
+  height: 8
   offSet: 10
   tilePrefab: {fileID: 9132002765453551875, guid: 4b34a36d40e7afa4f8d39442c68920fd,
     type: 3}
@@ -1141,7 +1141,13 @@ MonoBehaviour:
   - {fileID: 7980203745756247377, guid: 22547e51279606549934c29ec34ef4df, type: 3}
   destroyParticle: {fileID: 3003887161494845855, guid: 1219174ece3150249b329710a7cb5228,
     type: 3}
-  boardLayout: []
+  boardLayout:
+  - x: 2
+    y: 2
+    tileKind: 0
+  - x: 4
+    y: 4
+    tileKind: 0
   currentDot: {fileID: 0}
   basePieceValue: 20
   refillDelay: 0.5
@@ -1286,10 +1292,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelGoals:
-  - numNeeded: 5
+  - numNeeded: 2
     numcollected: 0
-    goalSprite: {fileID: 21300000, guid: e5ea83e516a9fa74d8e375d932b72671, type: 3}
-    matchValue: Dot1
+    goalSprite: {fileID: 21300000, guid: 52823d99627330d4cb98c977ef77470d, type: 3}
+    matchValue: Breakable
   - numNeeded: 5
     numcollected: 0
     goalSprite: {fileID: 21300000, guid: d9c644a4b014bf542ab219dd74dc19a2, type: 3}
@@ -1298,6 +1304,7 @@ MonoBehaviour:
     numcollected: 0
     goalSprite: {fileID: 21300000, guid: 711c5526806901845a3595574d93e872, type: 3}
     matchValue: Dot3
+  currentGoals: []
   goalPrefab: {fileID: 2135198155822612184, guid: 443bdf4835a8a134da43c6e7bd5979dd,
     type: 3}
   goalIntroParent: {fileID: 2059853987}
@@ -1748,6 +1755,7 @@ GameObject:
   - component: {fileID: 1975946721}
   - component: {fileID: 1975946723}
   - component: {fileID: 1975946722}
+  - component: {fileID: 1975946724}
   m_Layer: 5
   m_Name: Goals Text
   m_TagString: Untagged
@@ -1787,7 +1795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1816,6 +1824,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975946720}
   m_CullTransparentMesh: 1
+--- !u!114 &1975946724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975946720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2059853987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,12 +1928,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: -20
+    m_Right: -20
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -60
+  m_Spacing: -50
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -1944,17 +1967,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088073802}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.196, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 962718201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.72800004, y: 0.41878065}
-  m_AnchorMax: {x: 0.93000007, y: 0.6855613}
-  m_AnchoredPosition: {x: -0.1000061, y: -0.3000002}
-  m_SizeDelta: {x: -1, y: -0.15999985}
+  m_AnchorMin: {x: 0.708, y: 0.384}
+  m_AnchorMax: {x: 0.94600004, y: 0.703}
+  m_AnchoredPosition: {x: 0.5117035, y: 0.5614}
+  m_SizeDelta: {x: 0.7706, y: -21.8843}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088073804
 MonoBehaviour:
@@ -1969,19 +1992,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: -30
-    m_Right: -30
+    m_Left: -50
+    m_Right: -50
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -65
+  m_Spacing: -35
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
+  m_ReverseArrangement: 1
 --- !u!114 &2088073805
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -45,6 +45,7 @@ public class Boards : MonoBehaviour
     private int streakValue = 1;
     private ScoreManager scoreManager;
     private SoundManager soundManager;
+    private GoalManager goalManager;
     [SerializeField] float refillDelay = 0.5f;
     public int[] scoreGoals;
 
@@ -52,6 +53,7 @@ public class Boards : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        goalManager=FindObjectOfType<GoalManager>();
         soundManager = FindObjectOfType<SoundManager>();
         scoreManager = FindObjectOfType<ScoreManager>();
         breakableTiles = new BackgroundTile[width, height];
@@ -295,6 +297,11 @@ public class Boards : MonoBehaviour
                     breakableTiles[column, row] = null;
                 }
 
+            }
+            if(goalManager != null)
+            {
+                goalManager.ComapreGoal(allDots[column, row].tag.ToString());
+                goalManager.UpdateGoals();
             }
             //Does the sound manager exist?
             if (soundManager != null)
@@ -581,7 +588,7 @@ public class Boards : MonoBehaviour
                     {
                         pieceToUse = Random.Range(0, newBoard.Count);
                         maxIterations++;
-                        Debug.Log(maxIterations);
+                       // Debug.Log(maxIterations);
                     }
                     //Make a container for the piece
                     Dot piece = newBoard[pieceToUse].GetComponent<Dot>();

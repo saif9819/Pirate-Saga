@@ -15,6 +15,7 @@ public class BlankGoal
 public class GoalManager : MonoBehaviour
 {
     [SerializeField] private BlankGoal[] levelGoals;
+    [SerializeField] List<GoalPanel> currentGoals=new List<GoalPanel>();
     [SerializeField] private GameObject goalPrefab;
     [SerializeField] private GameObject goalIntroParent;
     [SerializeField] private GameObject goalGameParent;
@@ -22,10 +23,10 @@ public class GoalManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetupIntroGoals();
+        SetupGoals();
     }
 
-    void SetupIntroGoals()
+    void SetupGoals()
     {
         for (int i = 0; i < levelGoals.Length; i++)
         {
@@ -41,14 +42,40 @@ public class GoalManager : MonoBehaviour
             GameObject gameGoal = Instantiate(goalPrefab, goalGameParent.transform.position, Quaternion.identity);
             gameGoal.transform.SetParent(goalGameParent.transform);
             panel = gameGoal.GetComponent<GoalPanel>();
+            currentGoals.Add(panel);
             panel.thisSprite = levelGoals[i].goalSprite;
             panel.thisString = "0" + levelGoals[i].numNeeded;
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateGoals()
     {
+        int goalsCompleted = 0;
+        for (int i = 0; i < levelGoals.Length; i++)
+        {
+            currentGoals[i].thisText.text = "" + levelGoals[i].numcollected + "/" + levelGoals[i].numNeeded;
+            if (levelGoals[i].numcollected >= levelGoals[i].numNeeded)
+            {
+                goalsCompleted++;
+                currentGoals[i].thisText.text = "" + levelGoals[i].numNeeded + "/" + levelGoals[i].numNeeded;
+            }
+        }
+        if (goalsCompleted >= levelGoals.Length)
+        {
+            Debug.Log("You Win");
+        }
         
     }
+
+    public void ComapreGoal(string goalToComapre)
+    {
+        for(int i = 0;i < levelGoals.Length; i++)
+        {
+            if (goalToComapre == levelGoals[i].matchValue)
+            {
+                levelGoals[i].numcollected++;
+            }
+        }
+    }
+
 }
