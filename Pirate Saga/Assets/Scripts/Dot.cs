@@ -21,6 +21,7 @@ public class Dot : MonoBehaviour
     private Vector2 firstTouchPosition;
     private Vector2 finalTouchPosition;
     private Vector2 tempPosition;
+    private EndGameManager endGameManager;
 
     [Header("Swipe Stuff")]
     public float swipeAngle = 0;
@@ -46,6 +47,7 @@ public class Dot : MonoBehaviour
         isColorBomb = false;
         isAdjacentBomb = false;
 
+        endGameManager=FindObjectOfType<EndGameManager>();
         hintManager = FindObjectOfType<HintManager>();
         board = FindObjectOfType<Boards>();
         findMatches = FindObjectOfType<FindMatches>();
@@ -154,6 +156,14 @@ public class Dot : MonoBehaviour
             }
             else
             {
+                if(endGameManager != null)
+                {
+                    if(endGameManager.requirements.gameType == GameType.Moves)
+                    {
+                        endGameManager.DecreaseCounterValue();
+                    }
+                  
+                }
                 board.DestroyMatches();
 
             }
