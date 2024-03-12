@@ -28,17 +28,26 @@ public class TileType
 
 public class Boards : MonoBehaviour
 {
-
+    [Header("Scriptable Object stuff")]
     public World world;
+    public int level;
+
     public GameState currentState = GameState.move;
+
+    [Header("Board Dimensions")]
     public int width;
     public int height;
     public int offSet;
+
+    [Header("Prefabs")]
     public GameObject tilePrefab;
     public GameObject breakableTilePrefab;
     public GameObject[] dots;
     public GameObject destroyParticle;
+
+    [Header("Layout")]
     public TileType[] boardLayout;
+
     private bool[,] blankSpaces;
     private BackgroundTile[,] breakableTiles;
     public GameObject[,] allDots;
@@ -53,6 +62,24 @@ public class Boards : MonoBehaviour
     public int[] scoreGoals;
 
 
+
+    private void Awake()
+    {
+        if(world != null)
+        {
+            if (level < world.levels.Length)
+            {
+                if (world.levels[level] != null)
+                {
+                    width = world.levels[level].width;
+                    height = world.levels[level].height;
+                    dots = world.levels[level].dots;
+                    scoreGoals = world.levels[level].scoreGoals;
+                    boardLayout = world.levels[level].boardLayout;
+                }
+            }
+        }
+    }
     // Use this for initialization
     void Start()
     {

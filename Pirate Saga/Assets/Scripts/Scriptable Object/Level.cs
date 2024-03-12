@@ -7,15 +7,20 @@ using UnityEngine;
 public class Level : ScriptableObject
 {
     [Header("Board Dimensions")]
-    [SerializeField] private int width;
-    [SerializeField] private int height;
+    public int width;
+    public int height;
 
     [Header("Starting Tiles")]
-    [SerializeField] private TileType boardLayout;
+    public TileType[] boardLayout;
 
     [Header("Available Dots")]
-    [SerializeField] private GameObject[] dots;
+    public GameObject[] dots;
 
     [Header("Score Goals")]
-    [SerializeField] private int[] scoreGoals;
+    public int[] scoreGoals;
+
+    [Header("End Game Requirements")]
+    public EndGameRequirements endGameRequirements;
+    public BlankGoal[] levelGoals;
+    
 }

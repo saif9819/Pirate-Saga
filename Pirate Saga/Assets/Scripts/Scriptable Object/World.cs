@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu (fileName="World", menuName="World")]
 public class World : ScriptableObject
 {
-    [SerializeField] private Level[] levels;
+    public Level[] levels;
 }

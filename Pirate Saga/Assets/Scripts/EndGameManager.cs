@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,14 +33,29 @@ public class EndGameManager : MonoBehaviour
     private float timerSeconds;
     
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         fade = FindObjectOfType<FadePanelController>();
         boards =FindObjectOfType<Boards>();
+        SetGameType();
         SetupGame();
     }
-
+    void SetGameType()
+    {
+        if (boards.world != null)
+        {
+            if (boards.level < boards.world.levels.Length)
+            {
+                if (boards.world.levels[boards.level] != null)
+                {
+                    requirements = boards.world.levels[boards.level].endGameRequirements;
+                }
+            }
+        }
+    }
     void SetupGame()
     {
         currentCounterValue = requirements.counterValue;

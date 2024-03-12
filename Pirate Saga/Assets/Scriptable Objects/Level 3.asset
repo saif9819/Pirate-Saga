@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 5
   height: 6
-  boardLayout:
-    x: 0
-    y: 0
-    tileKind: 0
+  boardLayout: []
   dots:
   - {fileID: 0}
   - {fileID: 0}
@@ -26,3 +23,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   scoreGoals: 580200008403000008070000
+  endGameRequirements:
+    gameType: 0
+    counterValue: 0
+  levelGoals: []

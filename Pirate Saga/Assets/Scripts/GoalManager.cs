@@ -19,13 +19,33 @@ public class GoalManager : MonoBehaviour
     [SerializeField] private GameObject goalPrefab;
     [SerializeField] private GameObject goalIntroParent;
     [SerializeField] private GameObject goalGameParent;
+    private Boards boards;
     private EndGameManager endGame;
 
     // Start is called before the first frame update
     void Start()
     {
-        endGame=FindObjectOfType<EndGameManager>(); 
+        boards=FindObjectOfType<Boards>();
+        endGame=FindObjectOfType<EndGameManager>();
+        GetGoals();
         SetupGoals();
+    }
+
+    void GetGoals()
+    {
+        if (boards != null)
+        {
+            if(boards.world!=null)
+            {
+                if (boards.level < boards.world.levels.Length)
+                {
+                    if (boards.world.levels[boards.level] != null)
+                    {
+                        levelGoals = boards.world.levels[boards.level].levelGoals;
+                    }
+                }
+            }
+        }
     }
 
     void SetupGoals()
