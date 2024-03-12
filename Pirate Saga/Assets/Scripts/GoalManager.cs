@@ -19,10 +19,12 @@ public class GoalManager : MonoBehaviour
     [SerializeField] private GameObject goalPrefab;
     [SerializeField] private GameObject goalIntroParent;
     [SerializeField] private GameObject goalGameParent;
+    private EndGameManager endGame;
 
     // Start is called before the first frame update
     void Start()
     {
+        endGame=FindObjectOfType<EndGameManager>(); 
         SetupGoals();
     }
 
@@ -62,7 +64,12 @@ public class GoalManager : MonoBehaviour
         }
         if (goalsCompleted >= levelGoals.Length)
         {
-            Debug.Log("You Win");
+            if (endGame != null)
+            {
+                endGame.WinGame();
+                Debug.Log("You Win");
+            }
+            
         }
         
     }

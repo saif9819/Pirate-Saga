@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,14 +22,21 @@ public class EndGameManager : MonoBehaviour
 {
     [SerializeField] private GameObject movesLabel;
     [SerializeField] private GameObject timeLabel;
+    [SerializeField] private GameObject youWinPanel;
+    [SerializeField] private GameObject tryAgainPanel;
+    private FadePanelController fade;
     [SerializeField] private Text counter;
     public EndGameRequirements requirements;
     [SerializeField] private int currentCounterValue;
+    private Boards boards;
     private float timerSeconds;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        fade = FindObjectOfType<FadePanelController>();
+        boards =FindObjectOfType<Boards>();
         SetupGame();
     }
 
@@ -51,15 +59,35 @@ public class EndGameManager : MonoBehaviour
 
     public void DecreaseCounterValue()
     {
-        
+        if (boards.currentState != GameState.pause)
+        {
+
             currentCounterValue--;
             counter.text = "" + currentCounterValue;
-        if (currentCounterValue <= 0)
-        {
-            Debug.Log("you lose");
-            currentCounterValue = 0;
-            counter.text = "" + currentCounterValue;
+            if (currentCounterValue <= 0)
+            {
+                LoseGame();
+            }
         }
+    }
+
+    public void WinGame()
+    {
+        youWinPanel.SetActive(true);
+        boards.currentState = GameState.win;
+        currentCounterValue = 0;
+        counter.text = "" + currentCounterValue;
+        fade.GameOver();
+    }
+
+    public void LoseGame()
+    {
+        tryAgainPanel.SetActive(true);
+        boards.currentState = GameState.lose;
+        Debug.Log("you lose");
+        currentCounterValue = 0;
+        counter.text = "" + currentCounterValue;
+        fade.GameOver();
     }
 
     private void Update()
