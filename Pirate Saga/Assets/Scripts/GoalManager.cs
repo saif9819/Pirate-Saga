@@ -42,6 +42,10 @@ public class GoalManager : MonoBehaviour
                     if (boards.world.levels[boards.level] != null)
                     {
                         levelGoals = boards.world.levels[boards.level].levelGoals;
+                        for(int i = 0; i < levelGoals.Length; i++)
+                        {
+                            levelGoals[i].numcollected = 0;
+                        }
                     }
                 }
             }

@@ -67,6 +67,10 @@ public class Boards : MonoBehaviour
     {
         if(world != null)
         {
+            if(PlayerPrefs.HasKey("Current Level"))
+            {
+                level = PlayerPrefs.GetInt("Current Level");
+            }
             if (level < world.levels.Length)
             {
                 if (world.levels[level] != null)

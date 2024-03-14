@@ -16,14 +16,21 @@ MonoBehaviour:
   height: 6
   boardLayout: []
   dots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2823567514315397974, guid: dfa465b29d79d684d90d8dd99f2c1113, type: 3}
+  - {fileID: 4029714184854595807, guid: 4aca74056133f6445bc85830f091e4ae, type: 3}
+  - {fileID: 4222844061913629404, guid: 8fcf62b99c323804282232deb6640d82, type: 3}
+  - {fileID: 4942859436844455378, guid: e8a9450f823390d45b779dc9e1902265, type: 3}
+  - {fileID: 7980203745756247377, guid: 22547e51279606549934c29ec34ef4df, type: 3}
   scoreGoals: f4010000e8030000dc050000
   endGameRequirements:
     gameType: 0
-    counterValue: 0
-  levelGoals: []
+    counterValue: 40
+  levelGoals:
+  - numNeeded: 5
+    numcollected: 0
+    goalSprite: {fileID: 21300000, guid: d9c644a4b014bf542ab219dd74dc19a2, type: 3}
+    matchValue: Dot2
+  - numNeeded: 10
+    numcollected: 0
+    goalSprite: {fileID: 21300000, guid: b1d4b9f252c82104593280efb546dd71, type: 3}
+    matchValue: Dot7
