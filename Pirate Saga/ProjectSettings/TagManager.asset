@@ -15,6 +15,7 @@ TagManager:
   - Dot9
   - Color
   - Breakable
+  - Board
   layers:
   - Default
   - TransparentFX
