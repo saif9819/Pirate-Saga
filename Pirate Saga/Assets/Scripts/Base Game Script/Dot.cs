@@ -18,8 +18,8 @@ public class Dot : MonoBehaviour
     private FindMatches findMatches;
     private Boards board;
     public GameObject otherDot;
-    private Vector2 firstTouchPosition;
-    private Vector2 finalTouchPosition;
+    private Vector2 firstTouchPosition = Vector2.zero;
+    private Vector2 finalTouchPosition = Vector2.zero;
     private Vector2 tempPosition;
     private EndGameManager endGameManager;
 
@@ -63,7 +63,7 @@ public class Dot : MonoBehaviour
 
 
     //This is for testing and Debug only.
-    private void OnMouseOver()
+    /* private void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(1))
         {
@@ -71,7 +71,7 @@ public class Dot : MonoBehaviour
             GameObject marker = Instantiate(adjacentMarker, transform.position, Quaternion.identity);
             marker.transform.parent = this.transform;
         }
-    }
+    }*/
 
 
     // Update is called once per frame
@@ -95,10 +95,8 @@ public class Dot : MonoBehaviour
             if (board.allDots[column, row] != this.gameObject)
             {
                 board.allDots[column, row] = this.gameObject;
+                findMatches.FindAllMatches();
             }
-            findMatches.FindAllMatches();
-
-
         }
         else
         {
@@ -115,8 +113,9 @@ public class Dot : MonoBehaviour
             if (board.allDots[column, row] != this.gameObject)
             {
                 board.allDots[column, row] = this.gameObject;
+                findMatches.FindAllMatches();
             }
-            findMatches.FindAllMatches();
+            
 
         }
         else
