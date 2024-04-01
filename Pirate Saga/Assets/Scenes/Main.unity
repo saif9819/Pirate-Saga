@@ -2166,6 +2166,8 @@ MonoBehaviour:
     type: 3}
   breakableTilePrefab: {fileID: 1825092229918079561, guid: 7054ecebb4de6ba43992dcc68e32481a,
     type: 3}
+  lockTilePrefab: {fileID: 781058091683273569, guid: 252de1ad69b92964e84236ba0618cace,
+    type: 3}
   dots:
   - {fileID: 2823567514315397974, guid: dfa465b29d79d684d90d8dd99f2c1113, type: 3}
   - {fileID: 4029714184854595807, guid: 4aca74056133f6445bc85830f091e4ae, type: 3}
@@ -2179,6 +2181,9 @@ MonoBehaviour:
   destroyParticle: {fileID: 3003887161494845855, guid: 1219174ece3150249b329710a7cb5228,
     type: 3}
   boardLayout: []
+  matchType:
+    type: 0
+    color: 
   currentDot: {fileID: 0}
   basePieceValue: 20
   refillDelay: 0.5

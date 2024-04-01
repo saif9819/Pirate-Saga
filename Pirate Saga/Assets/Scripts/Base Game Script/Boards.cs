@@ -16,6 +16,9 @@ public enum TileKind
 {
     Breakable,
     Blank,
+    Lock,
+    Concrete,
+    Slime,
     Normal
 }
 
@@ -50,14 +53,15 @@ public class Boards : MonoBehaviour
     [Header("Prefabs")]
     public GameObject tilePrefab;
     public GameObject breakableTilePrefab;
+    public GameObject lockTilePrefab;
     public GameObject[] dots;
     public GameObject destroyParticle;
 
     [Header("Layout")]
     public TileType[] boardLayout;
-
     private bool[,] blankSpaces;
     private BackgroundTile[,] breakableTiles;
+    public BackgroundTile[,] lockTiles;
     public GameObject[,] allDots;
 
     [Header("Match Stuff")]
@@ -102,6 +106,7 @@ public class Boards : MonoBehaviour
         soundManager = FindObjectOfType<SoundManager>();
         scoreManager = FindObjectOfType<ScoreManager>();
         breakableTiles = new BackgroundTile[width, height];
+        lockTiles = new BackgroundTile[width, height];
         findMatches = FindObjectOfType<FindMatches>();
         blankSpaces = new bool[width, height];
         allDots = new GameObject[width, height];
@@ -137,10 +142,27 @@ public class Boards : MonoBehaviour
         }
     }
 
+    private void GenerateLockTiles()
+    {
+        //Look at all the tiles in the layout
+        for (int i = 0; i < boardLayout.Length; i++)
+        {
+            //if a tile is a "Lock" tile
+            if (boardLayout[i].tileKind == TileKind.Lock)
+            {
+                //Create a "Lock" tile at that position;
+                Vector2 tempPosition = new Vector2(boardLayout[i].x, boardLayout[i].y);
+                GameObject tile = Instantiate(lockTilePrefab, tempPosition, Quaternion.identity);
+                lockTiles[boardLayout[i].x, boardLayout[i].y] = tile.GetComponent<BackgroundTile>();
+            }
+        }
+    }
+
     private void SetUp()
     {
         GenerateBlankSpaces();
         GenerateBreakableTiles();
+        GenerateLockTiles();
         for (int i = 0; i < width; i++)
         {
             for (int j = 0; j < height; j++)
@@ -366,7 +388,19 @@ public class Boards : MonoBehaviour
                 }
 
             }
-            if(goalManager != null)
+
+            //Does a tile need to break?
+            if (lockTiles[column, row] != null)
+            {
+                //if it does, give one damage.
+                lockTiles[column, row].TakeDamage(1);
+                if (lockTiles[column, row].hitPoints <= 0)
+                {
+                    lockTiles[column, row] = null;
+                }
+            }
+
+            if (goalManager != null)
             {
                 goalManager.ComapreGoal(allDots[column, row].tag.ToString());
                 goalManager.UpdateGoals();
