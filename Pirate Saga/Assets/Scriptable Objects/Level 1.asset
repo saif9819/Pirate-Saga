@@ -12,15 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5b3883e87faec47af62076e34b7e70, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  width: 4
-  height: 4
+  width: 8
+  height: 8
   boardLayout:
   - x: 2
     y: 2
     tileKind: 3
   - x: 2
     y: 3
-    tileKind: 3
+    tileKind: 4
+  - x: 4
+    y: 4
+    tileKind: 2
+  - x: 1
+    y: 1
+    tileKind: 0
+  - x: 3
+    y: 5
+    tileKind: 1
+  - x: 3
+    y: 4
+    tileKind: 1
   dots:
   - {fileID: 2823567514315397974, guid: dfa465b29d79d684d90d8dd99f2c1113, type: 3}
   - {fileID: 4029714184854595807, guid: 4aca74056133f6445bc85830f091e4ae, type: 3}
@@ -31,7 +43,7 @@ MonoBehaviour:
     gameType: 0
     counterValue: 40
   levelGoals:
-  - numNeeded: 10
-    numcollected: 3
+  - numNeeded: 3
+    numcollected: 10
     goalSprite: {fileID: 21300000, guid: e5ea83e516a9fa74d8e375d932b72671, type: 3}
     matchValue: Dot1
