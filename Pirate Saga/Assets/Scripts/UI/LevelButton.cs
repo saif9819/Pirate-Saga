@@ -76,11 +76,6 @@ public class LevelButton : MonoBehaviour
     {
         levelText.text = "" + level;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ConfirmPanel(int level)
     {

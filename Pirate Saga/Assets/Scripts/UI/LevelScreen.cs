@@ -7,20 +7,18 @@ public class LevelScreen : MonoBehaviour
 {
 
 
-    public void level1()
+    public void Forset()
     {
-        SceneManager.LoadScene("Splash");
+        SceneManager.LoadScene("Forest");
     }
-   /* public void level2()
+
+    public void Desert()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Desert");
     }
-    public void level3()
+    public void Ice()
     {
-        SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene("Ice");
     }
-    public void level4()
-    {
-        SceneManager.LoadScene("Level4");
-    }*/
+
 }

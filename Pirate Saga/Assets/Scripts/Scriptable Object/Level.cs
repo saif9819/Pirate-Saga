@@ -6,6 +6,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "World", menuName = "Level")]
 public class Level : ScriptableObject
 {
+    [Header("Background Image")]
+    
+    public Sprite background;
+
     [Header("Board Dimensions")]
     public int width;
     public int height;
