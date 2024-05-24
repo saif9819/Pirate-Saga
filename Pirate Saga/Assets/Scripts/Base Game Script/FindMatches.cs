@@ -12,6 +12,8 @@ public class FindMatches : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 150;
         board = FindObjectOfType<Boards>();
     }
 

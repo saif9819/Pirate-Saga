@@ -12,18 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5b3883e87faec47af62076e34b7e70, type: 3}
   m_Name: Level 3
   m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: e26e721765206bc409628df1afab9989, type: 3}
   width: 5
-  height: 6
+  height: 5
   boardLayout: []
   dots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  scoreGoals: 580200008403000008070000
+  - {fileID: 5593294038772887454, guid: bb0a0c24cc1e2da4eac8b25bb4235622, type: 3}
+  - {fileID: 6617391984299115750, guid: e423063f56114ba4ab0eacfdc885541a, type: 3}
+  - {fileID: 320097093038661733, guid: 92ea490b701b947429913b4be429e151, type: 3}
+  - {fileID: 7720320212019102952, guid: cca1ff60722ca124ea584562a255c05d, type: 3}
+  - {fileID: 5211681404084826426, guid: 512a3dc962ffac143a43a4fbadc62aee, type: 3}
+  - {fileID: 8925703563204505223, guid: 1d9cf4caa5790d14ca1df87543183a87, type: 3}
+  - {fileID: 7533107113953729162, guid: 38633f73d5b457449a23cb4cb836b839, type: 3}
+  - {fileID: 5657024263497448272, guid: 96c780c607ff0304b90f57e23aa46253, type: 3}
+  scoreGoals: f4010000e8030000dc050000
   endGameRequirements:
-    gameType: 0
-    counterValue: 0
-  levelGoals: []
+    gameType: 1
+    counterValue: 60
+  levelGoals:
+  - numNeeded: 10
+    numcollected: 0
+    goalSprite: {fileID: 525641565, guid: 582ac3b4c23ddca4aad6c42cbd867521, type: 3}
+    matchValue: Heart
+  toLoad: Forest

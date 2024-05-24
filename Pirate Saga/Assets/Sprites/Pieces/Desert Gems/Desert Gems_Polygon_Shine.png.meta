@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 54
+        width: 353
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d2df148be5b294ea6f3cb9548fd0a6
+      internalID: -1004641574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 56
+        width: 353
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa950bfe9002bc41a51821f25b4a8e4
+      internalID: 1971824777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 57
+        width: 355
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8b6b632c3e64d43a44ea278876a8c3
+      internalID: -193230464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_3
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 54
+        width: 352
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1a6788583637f42ada319415cbe170
+      internalID: 765320209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_4
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 57
+        width: 351
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd63b3650291054bad3b40a68f16374
+      internalID: 368295246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_5
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 54
+        width: 352
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cd81f67ef048d4ea72ea635f71009f
+      internalID: -919020093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_6
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 54
+        width: 355
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c046f712adf8e9a44b9f73aae3bb67ca
+      internalID: 1355926220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_7
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 56
+        width: 355
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1359624a789d63a4186800cb75a132ae
+      internalID: 1848588224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_8
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 53
+        width: 350
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ceb6a3a4bc89f4e92ef8246045c35e
+      internalID: -133300990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Polygon_Shine_9
+      rect:
+        serializedVersion: 2
+        x: 3781
+        y: 56
+        width: 354
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e520d7a3188ae44b03f28e05ddd430
+      internalID: -1350083472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Desert Gems_Polygon_Shine_0: -1004641574
+      Desert Gems_Polygon_Shine_1: 1971824777
+      Desert Gems_Polygon_Shine_2: -193230464
+      Desert Gems_Polygon_Shine_3: 765320209
+      Desert Gems_Polygon_Shine_4: 368295246
+      Desert Gems_Polygon_Shine_5: -919020093
+      Desert Gems_Polygon_Shine_6: 1355926220
+      Desert Gems_Polygon_Shine_7: 1848588224
+      Desert Gems_Polygon_Shine_8: -133300990
+      Desert Gems_Polygon_Shine_9: -1350083472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

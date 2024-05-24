@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 56
+        width: 350
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7bbf17a6695d74c8595d582e893340
+      internalID: 603497827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 55
+        width: 353
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb9a80211917a54b92c19dc27c615a8
+      internalID: -2147345351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_2
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 55
+        width: 354
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac11f85944636334cb74efd2251205ca
+      internalID: -528339944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_3
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 55
+        width: 355
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b95212cffc504d4b988cfd28355d3d5
+      internalID: -1279021044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_4
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 55
+        width: 355
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c796d18e3ccff4cbbde5a655d55dae
+      internalID: 1301334917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_5
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 55
+        width: 352
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27bec7768e3a0f47b8682af30e80c3e
+      internalID: 948163769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_6
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 55
+        width: 352
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f20a7633a51eb94ca8c33ff7a13595f
+      internalID: -65412478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_7
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 57
+        width: 355
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf410ce72b979534f8676b11a721e499
+      internalID: -286092140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_8
+      rect:
+        serializedVersion: 2
+        x: 3365
+        y: 55
+        width: 355
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c5981d9067c264c91bc0c8f0d65c51
+      internalID: -1257633749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Polygon_Shine_9
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 56
+        width: 353
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b3c786ed9ffe84599ebfd8eccdb4ac
+      internalID: 749214264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a3e7bc2430d5e094385e08c5af515141
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forest Gems_Polygon_Shine_0: 603497827
+      Forest Gems_Polygon_Shine_1: -2147345351
+      Forest Gems_Polygon_Shine_2: -528339944
+      Forest Gems_Polygon_Shine_3: -1279021044
+      Forest Gems_Polygon_Shine_4: 1301334917
+      Forest Gems_Polygon_Shine_5: 948163769
+      Forest Gems_Polygon_Shine_6: -65412478
+      Forest Gems_Polygon_Shine_7: -286092140
+      Forest Gems_Polygon_Shine_8: -1257633749
+      Forest Gems_Polygon_Shine_9: 749214264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

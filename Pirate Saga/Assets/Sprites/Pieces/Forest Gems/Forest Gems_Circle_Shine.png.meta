@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,242 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 465
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01a0e525f72fb349ac6318dc67f8219
+      internalID: 1106379990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_16
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 46
+        width: 455
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fee8b19e77515844aec354f42695e5a
+      internalID: -765290849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_17
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 46
+        width: 452
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098501cd5a175564dbc44028108e269d
+      internalID: 218578653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_18
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 37
+        width: 462
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783260f65c1c363459b7b38886ab0f17
+      internalID: 1577503391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_20
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 46
+        width: 457
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b260a3a4f0d9f6b43884d91dd78ca18b
+      internalID: 1657608634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_22
+      rect:
+        serializedVersion: 2
+        x: 3679
+        y: 46
+        width: 465
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34569d4eee15d24695e059903e74ccb
+      internalID: -1824610359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_24
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 46
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1822ae6e1ec67d4b858e0db3752a902
+      internalID: 1087695256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Circle_Shine_25
+      rect:
+        serializedVersion: 2
+        x: 3159
+        y: 46
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed535be83acc2f842ba64f26e4b525cc
+      internalID: -321994055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7226f6b40dd7d5c4bb70089ac616d5fe
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forest Gems_Circle_Shine_0: -1362720728
+      Forest Gems_Circle_Shine_1: -2026115165
+      Forest Gems_Circle_Shine_10: 454334124
+      Forest Gems_Circle_Shine_11: -1281530644
+      Forest Gems_Circle_Shine_12: 985921693
+      Forest Gems_Circle_Shine_13: 1208533819
+      Forest Gems_Circle_Shine_14: 1106379990
+      Forest Gems_Circle_Shine_15: -1584175180
+      Forest Gems_Circle_Shine_16: -765290849
+      Forest Gems_Circle_Shine_17: 218578653
+      Forest Gems_Circle_Shine_18: 1577503391
+      Forest Gems_Circle_Shine_19: -589369978
+      Forest Gems_Circle_Shine_2: 1271149956
+      Forest Gems_Circle_Shine_20: 1657608634
+      Forest Gems_Circle_Shine_21: 631169011
+      Forest Gems_Circle_Shine_22: -1824610359
+      Forest Gems_Circle_Shine_23: -1084535498
+      Forest Gems_Circle_Shine_24: 1087695256
+      Forest Gems_Circle_Shine_25: -321994055
+      Forest Gems_Circle_Shine_26: 856372133
+      Forest Gems_Circle_Shine_27: 1305119013
+      Forest Gems_Circle_Shine_28: 328498849
+      Forest Gems_Circle_Shine_29: -356846578
+      Forest Gems_Circle_Shine_3: 1203515251
+      Forest Gems_Circle_Shine_30: 968706006
+      Forest Gems_Circle_Shine_31: -1086194303
+      Forest Gems_Circle_Shine_32: -152099851
+      Forest Gems_Circle_Shine_33: -998158078
+      Forest Gems_Circle_Shine_34: 1531618441
+      Forest Gems_Circle_Shine_35: -770873864
+      Forest Gems_Circle_Shine_36: -586778351
+      Forest Gems_Circle_Shine_37: 1057021749
+      Forest Gems_Circle_Shine_38: 1932927834
+      Forest Gems_Circle_Shine_39: 1989890071
+      Forest Gems_Circle_Shine_4: 1472438032
+      Forest Gems_Circle_Shine_40: 733923138
+      Forest Gems_Circle_Shine_41: 161979068
+      Forest Gems_Circle_Shine_42: 693777613
+      Forest Gems_Circle_Shine_43: 1604924622
+      Forest Gems_Circle_Shine_44: 1056411571
+      Forest Gems_Circle_Shine_45: 655413144
+      Forest Gems_Circle_Shine_46: -1665645054
+      Forest Gems_Circle_Shine_47: -1457585920
+      Forest Gems_Circle_Shine_48: 1197202600
+      Forest Gems_Circle_Shine_49: 1841842349
+      Forest Gems_Circle_Shine_5: 973979739
+      Forest Gems_Circle_Shine_50: -1898857455
+      Forest Gems_Circle_Shine_51: 338192213
+      Forest Gems_Circle_Shine_52: -1478930416
+      Forest Gems_Circle_Shine_53: -2067822359
+      Forest Gems_Circle_Shine_54: 1039940107
+      Forest Gems_Circle_Shine_55: -1251177177
+      Forest Gems_Circle_Shine_6: 579600547
+      Forest Gems_Circle_Shine_7: 1728812010
+      Forest Gems_Circle_Shine_8: -1776382554
+      Forest Gems_Circle_Shine_9: 1594899766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

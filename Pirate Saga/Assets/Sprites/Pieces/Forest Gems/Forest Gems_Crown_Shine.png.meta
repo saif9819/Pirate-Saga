@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,194 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bcf2c85abff8b48b4906dc65d927f6
+      internalID: 1962524783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_1
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e79c768db161bf45bdd2159dc7df2f0
+      internalID: -1173919544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_2
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e056e59adb9b14dafc53ea5ad58a1d
+      internalID: 614551818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_3
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a26c904043529141b9c399e2ceef6ae
+      internalID: -409359387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_4
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654ebf8746ecbc446a73f0eacbe74c0a
+      internalID: 509421560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_5
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464184bb6395c364ead6088e61719db8
+      internalID: 776606994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_6
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a0712733a2d9147b53c22b4f17abe1
+      internalID: 979722499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crown_Shine_7
+      rect:
+        serializedVersion: 2
+        x: 3633
+        y: 0
+        width: 519
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4739a716987b74c429aab0e3f17634c5
+      internalID: 622411584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b5be4ea4f608f9b4b9498f28e5e4ad85
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forest Gems_Crown_Shine_0: 1962524783
+      Forest Gems_Crown_Shine_1: -1173919544
+      Forest Gems_Crown_Shine_2: 614551818
+      Forest Gems_Crown_Shine_3: -409359387
+      Forest Gems_Crown_Shine_4: 509421560
+      Forest Gems_Crown_Shine_5: 776606994
+      Forest Gems_Crown_Shine_6: 979722499
+      Forest Gems_Crown_Shine_7: 622411584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

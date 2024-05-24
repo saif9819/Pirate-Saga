@@ -12,18 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5b3883e87faec47af62076e34b7e70, type: 3}
   m_Name: Level 6
   m_EditorClassIdentifier: 
-  width: 5
+  background: {fileID: 21300000, guid: 503c7b3ab48b2d64ab83809e48dc3bb3, type: 3}
+  width: 7
   height: 6
-  boardLayout: []
+  boardLayout:
+  - x: 4
+    y: 3
+    tileKind: 2
+  - x: 2
+    y: 2
+    tileKind: 4
+  - x: 4
+    y: 4
+    tileKind: 2
   dots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  scoreGoals: 580200008403000008070000
+  - {fileID: 7005040833366013427, guid: 49b57cda3a2fea948b9a5835e9dbee07, type: 3}
+  - {fileID: 6938582633653343917, guid: c7e9e22cb30cdd240b3f9e7a492be555, type: 3}
+  - {fileID: 8312223296098990336, guid: 51be244ad7e4bc64aacc0328506ab641, type: 3}
+  - {fileID: 2239175138003770302, guid: 378725ceb1991684598b56127730f735, type: 3}
+  - {fileID: 7963426850717998459, guid: 509a1560841fc3b4fbf2d8c34806c41b, type: 3}
+  - {fileID: 8456996790051413500, guid: 1c9a0b7939978a5439fb4ff605a68e5a, type: 3}
+  - {fileID: 7007212362589094490, guid: c3cd88fccbfc4eb479e90cba5997b4d5, type: 3}
+  - {fileID: 8460346447165074663, guid: 0244e817116bcde4680b8f259135d262, type: 3}
+  scoreGoals: 84030000780500006c070000
   endGameRequirements:
-    gameType: 0
-    counterValue: 0
-  levelGoals: []
+    gameType: 1
+    counterValue: 60
+  levelGoals:
+  - numNeeded: 10
+    numcollected: 0
+    goalSprite: {fileID: -270949909, guid: ba27547ffa5ef5b4084cda521db60ce1, type: 3}
+    matchValue: Heart
+  toLoad: Desert

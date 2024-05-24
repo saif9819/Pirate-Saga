@@ -16,6 +16,10 @@ public class BackToSplash : MonoBehaviour
     {
         gameData = FindObjectOfType<GameData>();
         boards = FindObjectOfType<Boards>();
+        if (boards != null && boards.world != null && boards.level < boards.world.levels.Length)
+        {
+            sceneToLoad = boards.world.levels[boards.level].toLoad;
+        }
     }
 
    

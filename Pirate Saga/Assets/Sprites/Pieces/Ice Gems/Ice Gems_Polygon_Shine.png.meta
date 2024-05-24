@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 350
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee635344e30d894aba3df13e0057c38
+      internalID: 614941719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 353
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9717081edad25b64a80aa975d5b0634f
+      internalID: 778157095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 0
+        width: 352
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c08548eae521094ab06e99629a1428e
+      internalID: 748751077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 354
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3df7c14e73d85243bff0796c246bfb5
+      internalID: 1035072905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_4
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 0
+        width: 356
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d70661253603394fa799f37a1064b77
+      internalID: -1661564688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_5
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 357
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b6c9be933ef7d43b3f71ae7f0ad6ea
+      internalID: -238717535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_6
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 0
+        width: 357
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb004b871ff7c604d9e7e948638e346c
+      internalID: -1024831544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_7
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 0
+        width: 351
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6cf8e903502b34ead1288773bd23bd
+      internalID: -587374356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_8
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 353
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0015106d3b48174788a2e21b420f004
+      internalID: -359453342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice Gems_Polygon_Shine_9
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 0
+        width: 355
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619be8f471102ea43bbf3ebcef8d8fe7
+      internalID: -1430563728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ice Gems_Polygon_Shine_0: 614941719
+      Ice Gems_Polygon_Shine_1: 778157095
+      Ice Gems_Polygon_Shine_2: 748751077
+      Ice Gems_Polygon_Shine_3: 1035072905
+      Ice Gems_Polygon_Shine_4: -1661564688
+      Ice Gems_Polygon_Shine_5: -238717535
+      Ice Gems_Polygon_Shine_6: -1024831544
+      Ice Gems_Polygon_Shine_7: -587374356
+      Ice Gems_Polygon_Shine_8: -359453342
+      Ice Gems_Polygon_Shine_9: -1430563728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

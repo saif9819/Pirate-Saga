@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,216 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 42
+        width: 319
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec9a4b04da51fd4e91fc8d3c48dbcfb
+      internalID: 358832368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_1
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 42
+        width: 326
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac41672441faaa54289aa14887c060cd
+      internalID: -2101420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_2
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 40
+        width: 325
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7271eb954e40e8147a8bba94ee316fe9
+      internalID: 1678590538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_3
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 40
+        width: 323
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f732fc3c1ac17e2478d49b92ad833939
+      internalID: 1797783443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_4
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 43
+        width: 320
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f12cd6b225fa354a9305fef7a56cea2
+      internalID: -953198620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_5
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 45
+        width: 319
+        height: 461
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bcead2342f88f4393ecd138cac8b57
+      internalID: -548378048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_6
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 43
+        width: 327
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e570f70445ac5949bcb7486ebbed4d4
+      internalID: 1067546488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_7
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 42
+        width: 324
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0881a8faa2efd7469dc3df5e22f1ca6
+      internalID: -2141149028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest Gems_Crystal_Shine_8
+      rect:
+        serializedVersion: 2
+        x: 3425
+        y: 44
+        width: 325
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df92260c6ed35f84cbaf863d8721553d
+      internalID: -2057603653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 461cba1188fcc8b42becd208fedb1ce2
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forest Gems_Crystal_Shine_0: 358832368
+      Forest Gems_Crystal_Shine_1: -2101420
+      Forest Gems_Crystal_Shine_2: 1678590538
+      Forest Gems_Crystal_Shine_3: 1797783443
+      Forest Gems_Crystal_Shine_4: -953198620
+      Forest Gems_Crystal_Shine_5: -548378048
+      Forest Gems_Crystal_Shine_6: 1067546488
+      Forest Gems_Crystal_Shine_7: -2141149028
+      Forest Gems_Crystal_Shine_8: -2057603653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

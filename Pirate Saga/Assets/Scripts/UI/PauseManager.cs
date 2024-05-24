@@ -86,8 +86,8 @@ public class PauseManager : MonoBehaviour
         paused = !paused;
     }
 
-    public void ExitGame()
+    /*public void ExitGame()
     {
         SceneManager.LoadScene("Splash");
-    }
+    }*/
 }

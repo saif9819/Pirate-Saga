@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,194 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 50
+        width: 454
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c0589d34f33874faa4e421ca6b2fb3
+      internalID: -1550328420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_1
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 48
+        width: 449
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa547b44c91f8b4c871529d493499ad
+      internalID: -997347083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_2
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 46
+        width: 450
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a33ee45fb8f5d248893aac71cf2fdbc
+      internalID: 11306509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_3
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 49
+        width: 455
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca361df676ba975409c70d3e1122eb20
+      internalID: 1364942418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_4
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 47
+        width: 453
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b918cd81c452ce04e9f03af8b5099a42
+      internalID: -1823200498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_5
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 48
+        width: 456
+        height: 451
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12427284bd5d8b6408d3e1bf5901191f
+      internalID: -884946061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_6
+      rect:
+        serializedVersion: 2
+        x: 3158
+        y: 50
+        width: 455
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f695928ee7781ad4a99381a96d8fc9cc
+      internalID: -1263567087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Circle_Shine_7
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 48
+        width: 451
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f16239bae82abe40b16c831855e1c82
+      internalID: -1736873887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 928a47e8a4b23cd4e9ff093726b1b02a
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Desert Gems_Circle_Shine_0: -1550328420
+      Desert Gems_Circle_Shine_1: -997347083
+      Desert Gems_Circle_Shine_2: 11306509
+      Desert Gems_Circle_Shine_3: 1364942418
+      Desert Gems_Circle_Shine_4: -1823200498
+      Desert Gems_Circle_Shine_5: -884946061
+      Desert Gems_Circle_Shine_6: -1263567087
+      Desert Gems_Circle_Shine_7: -1736873887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

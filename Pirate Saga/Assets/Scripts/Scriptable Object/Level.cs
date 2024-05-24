@@ -7,7 +7,6 @@ using UnityEngine;
 public class Level : ScriptableObject
 {
     [Header("Background Image")]
-    
     public Sprite background;
 
     [Header("Board Dimensions")]
@@ -26,5 +25,8 @@ public class Level : ScriptableObject
     [Header("End Game Requirements")]
     public EndGameRequirements endGameRequirements;
     public BlankGoal[] levelGoals;
-    
+
+    [Header("Scene To Load")]
+    public string toLoad;
+
 }

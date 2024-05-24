@@ -12,39 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5b3883e87faec47af62076e34b7e70, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  background: {fileID: 21300000, guid: 503c7b3ab48b2d64ab83809e48dc3bb3, type: 3}
-  width: 8
-  height: 8
-  boardLayout:
-  - x: 2
-    y: 2
-    tileKind: 3
-  - x: 2
-    y: 3
-    tileKind: 4
-  - x: 4
-    y: 4
-    tileKind: 2
-  - x: 1
-    y: 1
-    tileKind: 0
-  - x: 3
-    y: 5
-    tileKind: 1
-  - x: 3
-    y: 4
-    tileKind: 1
+  background: {fileID: 21300000, guid: e26e721765206bc409628df1afab9989, type: 3}
+  width: 5
+  height: 5
+  boardLayout: []
   dots:
-  - {fileID: 2823567514315397974, guid: dfa465b29d79d684d90d8dd99f2c1113, type: 3}
-  - {fileID: 4029714184854595807, guid: 4aca74056133f6445bc85830f091e4ae, type: 3}
-  - {fileID: 5638159282152061654, guid: a254f47ecf1250843a57e5eb733097a4, type: 3}
-  - {fileID: 542597016445450861, guid: 65588e0af7c013a45ab2c3f9e8ebf381, type: 3}
-  scoreGoals: fa000000f4010000e8030000
+  - {fileID: 5593294038772887454, guid: bb0a0c24cc1e2da4eac8b25bb4235622, type: 3}
+  - {fileID: 6617391984299115750, guid: e423063f56114ba4ab0eacfdc885541a, type: 3}
+  - {fileID: 320097093038661733, guid: 92ea490b701b947429913b4be429e151, type: 3}
+  - {fileID: 7720320212019102952, guid: cca1ff60722ca124ea584562a255c05d, type: 3}
+  - {fileID: 5211681404084826426, guid: 512a3dc962ffac143a43a4fbadc62aee, type: 3}
+  - {fileID: 8925703563204505223, guid: 1d9cf4caa5790d14ca1df87543183a87, type: 3}
+  - {fileID: 7533107113953729162, guid: 38633f73d5b457449a23cb4cb836b839, type: 3}
+  - {fileID: 5657024263497448272, guid: 96c780c607ff0304b90f57e23aa46253, type: 3}
+  scoreGoals: f4010000e8030000dc050000
   endGameRequirements:
     gameType: 0
     counterValue: 40
   levelGoals:
-  - numNeeded: 3
-    numcollected: 10
-    goalSprite: {fileID: 21300000, guid: e5ea83e516a9fa74d8e375d932b72671, type: 3}
-    matchValue: Dot1
+  - numNeeded: 15
+    numcollected: 3
+    goalSprite: {fileID: 1106379990, guid: a6752b5d0a4f0d34899774508a14d0cd, type: 3}
+    matchValue: Circle
+  toLoad: Forest

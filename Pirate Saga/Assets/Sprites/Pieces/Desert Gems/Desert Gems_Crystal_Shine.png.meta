@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -134,18 +134,216 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 43
+        width: 318
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b33a788634d55747a4cece4e720e94c
+      internalID: 430621571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_1
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 44
+        width: 321
+        height: 458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c79c95e4c11964ea95cef363f28c2a
+      internalID: 1295361760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_2
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 45
+        width: 320
+        height: 458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2384999d4007cc848b6e168e8258aafb
+      internalID: -83976674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 44
+        width: 320
+        height: 461
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6542db1bf0b66624ea0a78c4be261a3a
+      internalID: -148363012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_4
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 42
+        width: 320
+        height: 461
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efa17102eae4564e83474785ddf076d
+      internalID: 904832511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_5
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 44
+        width: 321
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276807f7360429045a38caa73abd2abe
+      internalID: 1441376339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_6
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 46
+        width: 316
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e48aa55761c86a459efbc44d066990a
+      internalID: -758715106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_7
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 46
+        width: 318
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6634840cddb28a049a1c68bc92690c59
+      internalID: -1962209201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Gems_Crystal_Shine_8
+      rect:
+        serializedVersion: 2
+        x: 3425
+        y: 41
+        width: 324
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b42275d71f56bc4b80a62fdc1105676
+      internalID: 639896145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Desert Gems_Crystal_Shine_0: 430621571
+      Desert Gems_Crystal_Shine_1: 1295361760
+      Desert Gems_Crystal_Shine_2: -83976674
+      Desert Gems_Crystal_Shine_3: -148363012
+      Desert Gems_Crystal_Shine_4: 904832511
+      Desert Gems_Crystal_Shine_5: 1441376339
+      Desert Gems_Crystal_Shine_6: -758715106
+      Desert Gems_Crystal_Shine_7: -1962209201
+      Desert Gems_Crystal_Shine_8: 639896145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

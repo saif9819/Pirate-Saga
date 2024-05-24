@@ -4,21 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Dot1
-  - Dot2
-  - Dot3
-  - Dot4
-  - Dot5
-  - Dot6
-  - Dot7
-  - Dot8
-  - Dot9
   - Color
   - Breakable
   - Board
   - Concrete
   - Chocolate
   - Lock
+  - Circle
+  - Crown
+  - Crystal
+  - Heart
+  - Octagon
+  - Polygon
+  - Square
+  - Star
   layers:
   - Default
   - TransparentFX
